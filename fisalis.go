@@ -78,6 +78,9 @@ func parse(str *string) ([]Result, error) {
 	body := *str
 	body = strings.Split(body, "<form action=\"?\" method=\"post\">")[1]
 	body = strings.Split(body, "</form>")[0]
+	if !strings.Contains(body, "Ergebnisse anzeigen") {
+		return nil, nil
+	}
 	body = strings.Split(body, "Ergebnisse anzeigen -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->")[1]
 	body = strings.ReplaceAll(body, "<em>", "")
 	body = strings.ReplaceAll(body, "</em>", "")

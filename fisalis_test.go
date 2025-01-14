@@ -27,3 +27,16 @@ func TestSearch(t *testing.T) {
 		t.Fatalf("Expected '2022/332 (OJ L53)', got '%s'", res[0].Documents[0].Id)
 	}
 }
+
+func TestEmptySearch(t *testing.T) {
+	ctx := context.Background()
+
+	res, err := fisalisgo.Search(ctx, "Bernd das Brot")
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if len(res) != 0 {
+		t.Fatalf("Expected 0 results, got %d", len(res))
+	}
+}
