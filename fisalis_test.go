@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	fisalisgo "github.com/LillySchramm/FiSaLisGo.git"
+	fisalisgo "github.com/LillySchramm/FiSaLisGo"
 )
 
 func TestSearch(t *testing.T) {

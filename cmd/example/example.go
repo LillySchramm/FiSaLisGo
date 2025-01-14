@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	fisalisgo "github.com/LillySchramm/FiSaLisGo.git"
+	fisalisgo "github.com/LillySchramm/FiSaLisGo"
 )
 
 func main() {

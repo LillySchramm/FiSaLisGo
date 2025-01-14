@@ -18,7 +18,7 @@ package main
 import (
 	"context"
 
-	fisalisgo "github.com/LillySchramm/FiSaLisGo.git"
+	fisalisgo "github.com/LillySchramm/FiSaLisGo"
 )
 
 func main() {
