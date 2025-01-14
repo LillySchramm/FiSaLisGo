@@ -1,3 +1,3 @@
-module github.com/LillySchramm/FiSaLisGo.git
+module github.com/LillySchramm/FiSaLisGo
 
 go 1.23.2
